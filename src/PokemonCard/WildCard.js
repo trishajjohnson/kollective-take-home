@@ -5,8 +5,9 @@ import "./PokemonCard.css";
 
 import DEFAULT_IMG from "../assets/pokeball-icon-27038.png";
 
-// Renders a single pokemon card.
-function PokemonCard({isWild, pokemon}) {
+// Renders a single pokemon WildCard.
+
+function WildCard({pokemon}) {
     const caughtPokemon = useSelector(state => state.pokemons);
     const dispatch = useDispatch();    
 
@@ -93,4 +94,4 @@ function PokemonCard({isWild, pokemon}) {
     );
 }
 
-export default PokemonCard;
+export default WildCard;

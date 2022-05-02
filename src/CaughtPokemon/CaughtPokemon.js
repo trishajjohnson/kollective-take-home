@@ -8,7 +8,7 @@ import "./CaughtPokemon.css";
 // Renders container for your caught pokemon at route /. Your caught pokemon
 //  are saved in localStorage and stored in Redux state.
 
-// Added option to clear localStorage of caught pokemon.
+// Added option to clear localStorage/Redux state of caught pokemon.
 
 const CaughtPokemon = () => {
     const pokemons = useSelector(state => state.pokemons);

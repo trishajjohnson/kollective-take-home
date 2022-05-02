@@ -11,15 +11,19 @@ const Routes = () => {
     return (
         <div>
            <Switch>
+
                 <Route exact path="/catch">
                     <WildPokemon />
                 </Route>
+
                 <Route exact path="/pokemon/:name/details">
                     <PokemonDetail />
                 </Route>
+
                 <Route exact path="/">
                     <CaughtPokemon />
                 </Route>
+
            </Switch>
           
         </div>

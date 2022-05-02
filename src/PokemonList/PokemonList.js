@@ -1,5 +1,6 @@
 import React from "react";
-import PokemonCard from "../PokemonCard/PokemonCard";
+import WildCard from "../PokemonCard/WildCard";
+import CaughtCard from "../PokemonCard/CaughtCard";
 import { Link } from "react-router-dom";
 import "./PokemonList.css";
 
@@ -12,12 +13,12 @@ const PokemonList = ({isCaught, pokes}) => {
     if(isCaught) {
         renderedPokemon = pokes.map(p => (
             <Link to={`/pokemon/${p.name}/details`} key={p.name}>
-                <PokemonCard isWild={false} key={p.name} pokemon={p} />  
+                <CaughtCard key={p.name} pokemon={p} />  
             </Link>
         ));
     } else {
         renderedPokemon = pokes.map(p => (
-            <PokemonCard isWild={true} key={p.name} pokemon={p} />
+            <WildCard key={p.name} pokemon={p} />
         ));
     }
 

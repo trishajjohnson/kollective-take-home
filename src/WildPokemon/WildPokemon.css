@@ -17,13 +17,13 @@
     padding: 5px !important;
     width: 40px !important;
     text-align: center !important;
-    margin: 5px !important;
+    margin: 0 auto;
     box-shadow: 2px 2px 5px #88888862;
 }
 
 @media only screen and (max-width: 415px) {
 
     .WildPokemon-header {
-        margin: 0;
+        margin: 0 auto;
     }
 }

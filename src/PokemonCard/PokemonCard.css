@@ -39,12 +39,37 @@ font-size: 1.5rem;
 .catch-btn {
     position: absolute;
     top: 185px;
+    background-color: #3d7dca;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px !important;
+    box-shadow: 2px 2px 5px #88888862;
+    
+}
+
+.catch-btn:hover {
+    background-color: #003a70;
+}
+
+.form-btn {
+    background-color: #3d7dca;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 3px !important;
+    box-shadow: 2px 2px 5px #88888862;
+    
+}
+
+.form-btn:hover {
+    background-color: #003a70;
 }
 
 .catch-form {
     position: absolute;
     top: 185px;
-    left: 10px;
+    left: 8px;
 }
 
 .PokemonCard-details {
@@ -68,8 +93,14 @@ font-size: 1.5rem;
 }
 
 .pName-input {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 2px;
+    border: none;
+    border-radius: 2px;
+}
+
+#free-one {
+    z-index: 101;
 }
 
 @media only screen and (max-width: 415px) {
@@ -79,6 +110,6 @@ font-size: 1.5rem;
     }
 
     .catch-form {
-        left: 55px;
+        left: 45px;
     }
 }

@@ -45,7 +45,7 @@
     margin: 5px 2px;
 }
 
-.back-btn {
+/* .back-btn {
     display: block;
     background-color: #3d7dca;
     color: white;
@@ -56,10 +56,14 @@
     text-align: center !important;
     margin: 5px !important;
     box-shadow: 2px 2px 5px #88888862;
-}
+} */
 
 .back-btn:hover {
     background-color: #003a70;
+}
+
+.detail-btn {
+    display: inline-block;
 }
 
 @media only screen and (max-width: 600px) {
@@ -84,6 +88,6 @@
     }
 
     .PokemonDetail-header {
-        margin: 0;
+        margin: 0 auto;
     }
 }
