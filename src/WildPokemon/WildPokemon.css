@@ -1,0 +1,22 @@
+.WildPokemon {
+    margin-left: 0 auto;
+}
+
+.WildPokemon-header {
+    margin: 0 auto;
+    width: 83%;
+}
+
+.back-btn {
+    display: block;
+    background-color: #3d7dca;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px !important;
+    width: 40px !important;
+    text-align: center !important;
+    margin: 5px !important;
+    box-shadow: 2px 2px 5px #88888862;
+}
+
