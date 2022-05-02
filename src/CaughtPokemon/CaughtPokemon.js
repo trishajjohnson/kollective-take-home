@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import { setPokemons } from "../features/pokemon/pokemonsSlice";
 import "./CaughtPokemon.css";
 
+// Renders container for your caught pokemon at route /. Your caught pokemon
+//  are saved in localStorage and stored in Redux state.
+
+// Added option to clear localStorage of caught pokemon.
 
 const CaughtPokemon = () => {
     const pokemons = useSelector(state => state.pokemons);
@@ -34,20 +38,15 @@ const CaughtPokemon = () => {
     return (
         <div className="CaughtPokemon">
             <h1>Your Caught Pokemon</h1>
-
+            <Link className="btn" to={`/catch`}>Catch Pokemon</Link>
+            {pokemons.pokemons.length > 0 ? <button id="set-em-free" className="btn" onClick={handleClick}>Set Em Free</button> : <></>}
+            
             {pokemons.pokemons.length > 0 ? (
-                <div>
-                    <Link className="btn" to={`/catch`}>Catch Pokemon</Link>
-                    <button id="set-em-free" className="btn" onClick={handleClick}>Set Em Free</button>
-                    <PokemonList isCaught={true} pokes={pokemons.pokemons} />
-                </div>
+                <PokemonList isCaught={true} pokes={pokemons.pokemons} />   
             ) : (
-                <div>
-                    <Link className="btn" to={`/catch`}>Catch Pokemon</Link>
-                    <p>You haven't caught any pokemon yet!  If you want to catch pokemon, click the 
-                        button below.
-                    </p>
-                </div>
+                <p>You haven't caught any pokemon yet!  If you want to catch pokemon, click the 
+                    button below.
+                </p>
             )}
             {isShowing ? (
                 <div id="single-modal" className="modal">

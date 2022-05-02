@@ -4,7 +4,6 @@ const initialState = {
   pokemons: JSON.parse(localStorage.getItem("pokemons"))
 };
 
-
 const pokemonsSlice = createSlice({
   name: "pokemons",
   initialState,

@@ -1,3 +1,8 @@
+.CaughtPokemon {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .btn {
     background-color: #3d7dca;
     color: white;
@@ -22,7 +27,7 @@
 .modal {
     position: fixed; 
     z-index: 100; 
-    padding-top: 100px; 
+    padding-top: 200px; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -43,7 +48,7 @@
     width: 35%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
 
     .modal-content {
         width: 75%;

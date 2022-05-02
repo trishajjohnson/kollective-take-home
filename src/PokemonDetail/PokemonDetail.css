@@ -69,7 +69,7 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
     .PokemonDetail {
         width: 100%;
         height: 300px;
@@ -80,5 +80,10 @@
         height: 475px;
         overflow-wrap: break-word;
         hyphens: auto;
+        width: 100%;
+    }
+
+    .PokemonDetail-header {
+        margin: 0;
     }
 }

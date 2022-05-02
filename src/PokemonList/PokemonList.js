@@ -3,6 +3,8 @@ import PokemonCard from "../PokemonCard/PokemonCard";
 import { Link } from "react-router-dom";
 import "./PokemonList.css";
 
+// Renders the container that holds the pokemon cards. Used
+// for both CaughtPokemon and WildPokemon components.
 
 const PokemonList = ({isCaught, pokes}) => {
     let renderedPokemon;

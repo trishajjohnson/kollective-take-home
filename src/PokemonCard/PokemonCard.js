@@ -5,7 +5,7 @@ import "./PokemonCard.css";
 
 import DEFAULT_IMG from "../assets/pokeball-icon-27038.png";
 
-/* Renders a single pokemon card. */
+// Renders a single pokemon card.
 function PokemonCard({isWild, pokemon}) {
     const caughtPokemon = useSelector(state => state.pokemons);
     const dispatch = useDispatch();    
@@ -25,6 +25,13 @@ function PokemonCard({isWild, pokemon}) {
         }));
     }
 
+    function handleClick(e) { 
+        e.preventDefault();
+
+        setIsSelected(false);
+        setShowNameForm(false);
+    }
+
     function handleSubmit(e) {
         e.preventDefault();
 
@@ -39,6 +46,7 @@ function PokemonCard({isWild, pokemon}) {
         localStorage.setItem("pokemons", JSON.stringify([...caughtPokemon.pokemons, p]));
 
         setIsSelected(false);
+        setShowNameForm(false);
     }
 
 
@@ -48,7 +56,7 @@ function PokemonCard({isWild, pokemon}) {
            
             {isSelected ? (
                 <div className="PokemonCard-front">
-                    <p className="flip" onClick={() => setIsSelected(false)}>x</p>
+                    <p className="flip" onClick={handleClick}>x</p>
                     <div className="PokemonCard-details">
                         <h3>Type:</h3>
                         <p>{pokemon.types.map(t => t.type.name).join(', ')}</p>

@@ -4,6 +4,8 @@ import CaughtPokemon from "./CaughtPokemon/CaughtPokemon";
 import WildPokemon from "./WildPokemon/WildPokemon";
 import PokemonDetail from "./PokemonDetail/PokemonDetail";
 
+// Renders all pages/routes for app.
+
 const Routes = () => {
 
     return (

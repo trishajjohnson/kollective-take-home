@@ -5,10 +5,15 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import "./PokemonDetail.css";
 
+// Renders pokemon detail page component, accessed by clicking the caught pokemon
+// cards found at route /.
 
 const PokemonDetail = () => {
+    // Name provided by Pokeapi.
     const name = useParams().name;
+    // Name given to pokemon by user when caught and saved to Redux state.
     const pName = useSelector(state => state.pokemons).pokemons.filter(p => p.name === name)[0].pName;
+    
     const [pokemon, setPokemon] = useState(null);
     const [infoLoaded, setInfoLoaded] = useState(false);
 

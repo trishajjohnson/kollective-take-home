@@ -72,3 +72,13 @@ font-size: 1.5rem;
     margin-right: 2px;
 }
 
+@media only screen and (max-width: 415px) {
+
+    .PokemonCard {
+        width: 100%;
+    }
+
+    .catch-form {
+        left: 55px;
+    }
+}

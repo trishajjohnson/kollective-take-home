@@ -1,5 +1,6 @@
 .WildPokemon {
-    margin-left: 0 auto;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .WildPokemon-header {
@@ -20,3 +21,9 @@
     box-shadow: 2px 2px 5px #88888862;
 }
 
+@media only screen and (max-width: 415px) {
+
+    .WildPokemon-header {
+        margin: 0;
+    }
+}
